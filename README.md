@@ -224,9 +224,10 @@ Checked 2026-11-18.
 
 ## Development
 ```bash
-uv run pytest -q
+pip install -e ".[test]"
+python -m pytest -q -m "not network"
 ```
-85 tests pass; they run without network access. Bugs and ideas are welcome as issues. Changes are listed in [CHANGELOG.md](CHANGELOG.md).
+CI runs exactly this on Python 3.12 (a single job). 89 tests run this way, without network access; the one test marked `network` builds the real Hub client and is deselected there (`pytest -q` runs all 90). Bugs and ideas are welcome as issues. Changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 MIT.

@@ -224,9 +224,10 @@ flowchart LR
 
 ## 개발·기여
 ```bash
-uv run pytest -q
+pip install -e ".[test]"
+python -m pytest -q -m "not network"
 ```
-테스트 85개가 통과하며 네트워크 없이 실행됩니다. 버그·제안은 이슈로 남겨 주세요. 변경 기록은 [CHANGELOG.md](CHANGELOG.md).
+CI 는 Python 3.12 단일 잡에서 정확히 이 명령을 실행합니다. 이렇게 하면 테스트 89개가 네트워크 없이 실행되고, `network` 마커가 붙은 테스트 1개(실제 Hub 클라이언트 생성)는 제외됩니다(`pytest -q` 는 90개 전부 실행). 버그·제안은 이슈로 남겨 주세요. 변경 기록은 [CHANGELOG.md](CHANGELOG.md).
 
 ## 라이선스
 MIT.

@@ -5,6 +5,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-11-18
+
+### Changed
+- CI: a single job on Python 3.12 with only `actions/checkout` and `actions/setup-python`, both pinned to full commit SHAs; installs with `pip install -e ".[test]"` and runs `pytest -m "not network"`.
+- CI: removed the matrix, the weekly schedule and the uv steps.
+- Added a `test` extra and a `network` pytest marker (the real-client test is deselected in CI).
+
 ## [0.1.2] - 2026-11-18
 
 ### Fixed
