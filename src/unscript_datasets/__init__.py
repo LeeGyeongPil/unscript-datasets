@@ -7,5 +7,5 @@ helpers: their signatures may change between minor versions.
 from .extract import scan_paths
 from .judge import judge_call
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __all__ = ["__version__", "scan_paths", "judge_call"]

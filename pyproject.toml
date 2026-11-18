@@ -1,6 +1,6 @@
 [project]
 name = "unscript-datasets"
-version = "0.1.0"
+version = "0.1.1"
 description = "Scan Python code and notebooks for load_dataset calls broken by 'Dataset scripts are no longer supported' and rewrite them based on each Hub dataset's current state."
 readme = "README.md"
 license = "MIT"

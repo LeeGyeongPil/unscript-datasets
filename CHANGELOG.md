@@ -5,6 +5,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-18
+
+### Fixed
+- CI: move to `actions/checkout@v6` and `astral-sh/setup-uv@v7` (Node 24 runtimes) so the test workflow runs again.
+- CI: pin the test interpreter to Python 3.12 so a new CPython release cannot change the tested version or force source builds.
+
 ## [0.1.0] - 2026-11-18
 
 ### Added
