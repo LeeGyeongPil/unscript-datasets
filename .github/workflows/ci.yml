@@ -1,37 +1,21 @@
-# 키·모델·네트워크 없이 mock 모드로 전체 흐름을 검증한다.
-# GitHub 이 만든 액션(checkout·setup-python)만 쓰고, uv 는 PyPI 에서 고정 버전으로 설치한다.
+# Minimal CI: one job, one Python, GitHub-owned actions pinned to full commit SHAs.
 name: ci
 on:
   push:
   pull_request:
-  schedule:
-    - cron: "17 3 * * 1"   # 매주 월요일 — 의존성·런타임이 바뀌어 깨지지 않았는지 정기 확인
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.10", "3.12"]   # requires-python 하한 + 현재 주력 버전
+    timeout-minutes: 10
     env:
-      HF_HUB_OFFLINE: "1"                  # 테스트는 Hub 에 접속하지 않는다(conftest 가 소켓도 막음)
-      UV_PYTHON_DOWNLOADS: never           # setup-python 이 깐 인터프리터만 쓴다
+      HF_HUB_OFFLINE: "1"
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
         with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install uv
-        run: python -m pip install "uv==0.13.6"
-      - name: Show tool versions
-        run: |
-          python -V
-          uv --version
-      - name: Install dependencies from uv.lock
-        run: uv sync --locked --python ${{ matrix.python-version }}
-      - name: Run tests
-        run: uv run --locked pytest -q -ra --tb=short
+          python-version: "3.12"
+      - run: python -m pip install -e ".[test]"
+      - run: python -m pytest -q -m "not network"

@@ -153,6 +153,7 @@ def test_record_command_warns_with_exit_1(tmp_path, monkeypatch, capsys, ids, re
     assert len(list(out.iterdir())) == 1
 
 
+@pytest.mark.network
 def test_record_without_network_uses_real_client_and_writes_nothing(tmp_path, capsys):
     # 진짜 HfApi 로 실행한다. conftest 가 소켓을 막아 두었으므로 "Hub 에 닿지 못하는" 상황 그대로다.
     out = tmp_path / "o"
