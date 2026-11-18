@@ -1,0 +1,35 @@
+{
+ "requested_id": "MahmoodLab/Patho-Bench",
+ "canonical_id": "MahmoodLab/Patho-Bench",
+ "status": "ok",
+ "recorded_at": "2026-11-18",
+ "main_sha": "60fde3a9138b2fb27a163ed6f3e2cf0ef7e8f387",
+ "main_last_modified": "2025-04-24T22:20:32Z",
+ "convert_last_modified": null,
+ "pull_requests": [],
+ "trees": {
+  "main": [
+   "Patho-Bench.py",
+   "README.md",
+   "available_splits.yaml",
+   "bc_therapy/er_status/config.yaml",
+   "bc_therapy/er_status/k=all.tsv",
+   "bc_therapy/er_status/viz/folds.png",
+   "bc_therapy/er_status/viz/labels.png",
+   "bc_therapy/grade/config.yaml",
+   "bc_therapy/grade/k=all.tsv",
+   "bc_therapy/grade/viz/folds.png",
+   "bc_therapy/grade/viz/labels.png",
+   "bc_therapy/her2_status/config.yaml",
+   "bc_therapy/her2_status/k=all.tsv",
+   "patho_bench_public.png"
+  ]
+ },
+ "card_configs": null,
+ "synthetic": false,
+ "aliases": [
+  "MahmoodLab/Patho-Bench"
+ ],
+ "source": "file list trimmed to root files plus 10 samples",
+ "format": 1
+}

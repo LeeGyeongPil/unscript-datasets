@@ -1,0 +1,45 @@
+{
+ "requested_id": "conll2003",
+ "canonical_id": "eriktks/conll2003",
+ "status": "ok",
+ "recorded_at": "2026-11-18",
+ "main_sha": "3f1cce917ab38486481b062921eb137e7bd3c205",
+ "main_last_modified": "2024-01-18T09:34:17Z",
+ "convert_last_modified": "2024-05-16T12:52:38Z",
+ "pull_requests": [
+  {
+   "num": 15,
+   "ref": "refs/pr/15",
+   "title": "Convert dataset to Parquet",
+   "status": "open"
+  }
+ ],
+ "trees": {
+  "main": [
+   ".gitattributes",
+   "README.md",
+   "conll2003.py"
+  ],
+  "refs/convert/parquet": [
+   ".gitattributes",
+   "conll2003/test/0000.parquet",
+   "conll2003/train/0000.parquet",
+   "conll2003/validation/0000.parquet"
+  ],
+  "refs/pr/15": [
+   ".gitattributes",
+   "README.md",
+   "conll2003/test-00000-of-00001.parquet",
+   "conll2003/train-00000-of-00001.parquet",
+   "conll2003/validation-00000-of-00001.parquet"
+  ]
+ },
+ "card_configs": null,
+ "synthetic": false,
+ "aliases": [
+  "conll2003",
+  "eriktks/conll2003"
+ ],
+ "source": "",
+ "format": 1
+}

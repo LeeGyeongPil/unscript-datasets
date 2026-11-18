@@ -1,0 +1,105 @@
+{
+ "requested_id": "bigscience/P3",
+ "canonical_id": "bigscience/P3",
+ "status": "ok",
+ "recorded_at": "2026-11-18",
+ "main_sha": "db485208b9f41d46c1d0975202328d08f8199046",
+ "main_last_modified": "2024-03-04T18:08:03Z",
+ "convert_last_modified": "2024-03-05T04:41:44Z",
+ "pull_requests": [
+  {
+   "num": 2,
+   "ref": "refs/pr/2",
+   "title": "july2022update",
+   "status": "draft"
+  },
+  {
+   "num": 20,
+   "ref": "refs/pr/20",
+   "title": "created License file based on tag",
+   "status": "open"
+  }
+ ],
+ "trees": {
+  "main": [
+   ".gitattributes",
+   ".gitignore",
+   "README.md",
+   "adversarial_qa_dbert_answer_the_following_q/train-00000-of-00001.parquet",
+   "adversarial_qa_dbert_answer_the_following_q/validation-00000-of-00001.parquet",
+   "adversarial_qa_dbert_based_on/train-00000-of-00001.parquet",
+   "adversarial_qa_dbert_based_on/validation-00000-of-00001.parquet",
+   "adversarial_qa_dbert_generate_question/test-00000-of-00001.parquet",
+   "adversarial_qa_dbert_generate_question/train-00000-of-00001.parquet",
+   "adversarial_qa_dbert_generate_question/validation-00000-of-00001.parquet",
+   "adversarial_qa_dbert_question_context_answer/train-00000-of-00001.parquet",
+   "adversarial_qa_dbert_question_context_answer/validation-00000-of-00001.parquet",
+   "adversarial_qa_dbert_tell_what_it_is/train-00000-of-00001.parquet",
+   "tasks_splits_and_features.py"
+  ],
+  "refs/convert/parquet": [
+   ".gitattributes",
+   "adversarial_qa_dbert_answer_the_following_q/train/0000.parquet",
+   "adversarial_qa_dbert_answer_the_following_q/validation/0000.parquet",
+   "adversarial_qa_dbert_based_on/train/0000.parquet",
+   "adversarial_qa_dbert_based_on/validation/0000.parquet",
+   "adversarial_qa_dbert_generate_question/test/0000.parquet",
+   "adversarial_qa_dbert_generate_question/train/0000.parquet",
+   "adversarial_qa_dbert_generate_question/validation/0000.parquet",
+   "adversarial_qa_dbert_question_context_answer/train/0000.parquet",
+   "adversarial_qa_dbert_question_context_answer/validation/0000.parquet",
+   "adversarial_qa_dbert_tell_what_it_is/train/0000.parquet"
+  ]
+ },
+ "card_configs": [
+  {
+   "config_name": "adversarial_qa_dbert_answer_the_following_q",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "adversarial_qa_dbert_answer_the_following_q/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "adversarial_qa_dbert_answer_the_following_q/validation-*"
+    }
+   ]
+  },
+  {
+   "config_name": "adversarial_qa_dbert_based_on",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "adversarial_qa_dbert_based_on/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "adversarial_qa_dbert_based_on/validation-*"
+    }
+   ]
+  },
+  {
+   "config_name": "adversarial_qa_dbert_generate_question",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "adversarial_qa_dbert_generate_question/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "adversarial_qa_dbert_generate_question/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "adversarial_qa_dbert_generate_question/test-*"
+    }
+   ]
+  }
+ ],
+ "synthetic": false,
+ "aliases": [
+  "bigscience/P3"
+ ],
+ "source": "recorded with unscript-datasets record; file lists trimmed to root files plus 10 samples to keep the repo small",
+ "format": 1
+}

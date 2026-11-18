@@ -1,0 +1,316 @@
+{
+ "requested_id": "nyu-mll/glue",
+ "canonical_id": "nyu-mll/glue",
+ "status": "ok",
+ "recorded_at": "2026-11-18",
+ "main_sha": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+ "main_last_modified": "2024-01-30T07:41:18Z",
+ "convert_last_modified": "2024-03-14T21:57:46Z",
+ "pull_requests": [
+  {
+   "num": 23,
+   "ref": "refs/pr/23",
+   "title": "note --> booktitle",
+   "status": "open"
+  },
+  {
+   "num": 25,
+   "ref": "refs/pr/25",
+   "title": "Fix incorrect Label on AX-b subset",
+   "status": "open"
+  },
+  {
+   "num": 26,
+   "ref": "refs/pr/26",
+   "title": "Upload MONSTERDOG_METASEQUENCE_MACHINE.py",
+   "status": "open"
+  },
+  {
+   "num": 27,
+   "ref": "refs/pr/27",
+   "title": "glue",
+   "status": "draft"
+  }
+ ],
+ "trees": {
+  "main": [
+   ".gitattributes",
+   "README.md",
+   "ax/test-00000-of-00001.parquet",
+   "cola/test-00000-of-00001.parquet",
+   "cola/train-00000-of-00001.parquet",
+   "cola/validation-00000-of-00001.parquet",
+   "mnli/test_matched-00000-of-00001.parquet",
+   "mnli/test_mismatched-00000-of-00001.parquet",
+   "mnli/train-00000-of-00001.parquet",
+   "mnli/validation_matched-00000-of-00001.parquet",
+   "mnli/validation_mismatched-00000-of-00001.parquet",
+   "mnli_matched/test-00000-of-00001.parquet",
+   "mnli_matched/validation-00000-of-00001.parquet",
+   "mnli_mismatched/test-00000-of-00001.parquet",
+   "mnli_mismatched/validation-00000-of-00001.parquet",
+   "mrpc/test-00000-of-00001.parquet",
+   "mrpc/train-00000-of-00001.parquet",
+   "mrpc/validation-00000-of-00001.parquet",
+   "qnli/test-00000-of-00001.parquet",
+   "qnli/train-00000-of-00001.parquet",
+   "qnli/validation-00000-of-00001.parquet",
+   "qqp/test-00000-of-00001.parquet",
+   "qqp/train-00000-of-00001.parquet",
+   "qqp/validation-00000-of-00001.parquet",
+   "rte/test-00000-of-00001.parquet",
+   "rte/train-00000-of-00001.parquet",
+   "rte/validation-00000-of-00001.parquet",
+   "sst2/test-00000-of-00001.parquet",
+   "sst2/train-00000-of-00001.parquet",
+   "sst2/validation-00000-of-00001.parquet",
+   "stsb/test-00000-of-00001.parquet",
+   "stsb/train-00000-of-00001.parquet",
+   "stsb/validation-00000-of-00001.parquet",
+   "wnli/test-00000-of-00001.parquet",
+   "wnli/train-00000-of-00001.parquet",
+   "wnli/validation-00000-of-00001.parquet"
+  ],
+  "refs/convert/parquet": [
+   ".gitattributes",
+   "ax/test/0000.parquet",
+   "cola/test/0000.parquet",
+   "cola/train/0000.parquet",
+   "cola/validation/0000.parquet",
+   "mnli/test_matched/0000.parquet",
+   "mnli/test_mismatched/0000.parquet",
+   "mnli/train/0000.parquet",
+   "mnli/validation_matched/0000.parquet",
+   "mnli/validation_mismatched/0000.parquet",
+   "mnli_matched/test/0000.parquet",
+   "mnli_matched/validation/0000.parquet",
+   "mnli_mismatched/test/0000.parquet",
+   "mnli_mismatched/validation/0000.parquet",
+   "mrpc/test/0000.parquet",
+   "mrpc/train/0000.parquet",
+   "mrpc/validation/0000.parquet",
+   "qnli/test/0000.parquet",
+   "qnli/train/0000.parquet",
+   "qnli/validation/0000.parquet",
+   "qqp/test/0000.parquet",
+   "qqp/train/0000.parquet",
+   "qqp/validation/0000.parquet",
+   "rte/test/0000.parquet",
+   "rte/train/0000.parquet",
+   "rte/validation/0000.parquet",
+   "sst2/test/0000.parquet",
+   "sst2/train/0000.parquet",
+   "sst2/validation/0000.parquet",
+   "stsb/test/0000.parquet",
+   "stsb/train/0000.parquet",
+   "stsb/validation/0000.parquet",
+   "wnli/test/0000.parquet",
+   "wnli/train/0000.parquet",
+   "wnli/validation/0000.parquet"
+  ]
+ },
+ "card_configs": [
+  {
+   "config_name": "ax",
+   "data_files": [
+    {
+     "split": "test",
+     "path": "ax/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "cola",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "cola/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "cola/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "cola/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "mnli",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "mnli/train-*"
+    },
+    {
+     "split": "validation_matched",
+     "path": "mnli/validation_matched-*"
+    },
+    {
+     "split": "validation_mismatched",
+     "path": "mnli/validation_mismatched-*"
+    },
+    {
+     "split": "test_matched",
+     "path": "mnli/test_matched-*"
+    },
+    {
+     "split": "test_mismatched",
+     "path": "mnli/test_mismatched-*"
+    }
+   ]
+  },
+  {
+   "config_name": "mnli_matched",
+   "data_files": [
+    {
+     "split": "validation",
+     "path": "mnli_matched/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "mnli_matched/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "mnli_mismatched",
+   "data_files": [
+    {
+     "split": "validation",
+     "path": "mnli_mismatched/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "mnli_mismatched/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "mrpc",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "mrpc/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "mrpc/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "mrpc/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "qnli",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "qnli/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "qnli/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "qnli/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "qqp",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "qqp/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "qqp/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "qqp/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "rte",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "rte/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "rte/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "rte/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "sst2",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "sst2/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "sst2/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "sst2/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "stsb",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "stsb/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "stsb/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "stsb/test-*"
+    }
+   ]
+  },
+  {
+   "config_name": "wnli",
+   "data_files": [
+    {
+     "split": "train",
+     "path": "wnli/train-*"
+    },
+    {
+     "split": "validation",
+     "path": "wnli/validation-*"
+    },
+    {
+     "split": "test",
+     "path": "wnli/test-*"
+    }
+   ]
+  }
+ ],
+ "synthetic": false,
+ "aliases": [
+  "nyu-mll/glue"
+ ],
+ "source": "",
+ "format": 1
+}

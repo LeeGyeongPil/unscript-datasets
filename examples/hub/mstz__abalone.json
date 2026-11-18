@@ -1,0 +1,57 @@
+{
+ "requested_id": "mstz/abalone",
+ "canonical_id": "mstz/abalone",
+ "status": "ok",
+ "recorded_at": "2026-11-18",
+ "main_sha": "3f7aee9ca247e7b491a84390817e1934f270fdc7",
+ "main_last_modified": "2025-10-08T09:40:00Z",
+ "convert_last_modified": "2025-10-08T09:40:25Z",
+ "pull_requests": [],
+ "trees": {
+  "56bbaf9671": [
+   ".gitattributes",
+   "README.md",
+   "abalone.data",
+   "abalone.py"
+  ],
+  "main": [
+   ".gitattributes",
+   "README.md",
+   "abalone/train.csv",
+   "binary/train.csv"
+  ],
+  "refs/convert/parquet": [
+   ".gitattributes",
+   "abalone/train/0000.parquet",
+   "binary/train/0000.parquet"
+  ]
+ },
+ "card_configs": [
+  {
+   "config_name": "abalone",
+   "data_files": [
+    {
+     "path": "abalone/train.csv",
+     "split": "train"
+    }
+   ],
+   "default": true
+  },
+  {
+   "config_name": "binary",
+   "data_files": [
+    {
+     "path": "binary/train.csv",
+     "split": "train"
+    }
+   ],
+   "default": false
+  }
+ ],
+ "synthetic": false,
+ "aliases": [
+  "mstz/abalone"
+ ],
+ "source": "",
+ "format": 1
+}
