@@ -5,6 +5,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-11-18
+
+### Fixed
+- CI: use only GitHub's own actions (`actions/checkout`, `actions/setup-python`) and install uv 0.13.6 with pip.
+- CI: test on Python 3.10 and 3.12 (the `requires-python` floor and the current main version).
+- CI: run pytest with `-ra` so skipped and failed tests are listed in detail.
+
 ## [0.1.1] - 2026-11-18
 
 ### Fixed
